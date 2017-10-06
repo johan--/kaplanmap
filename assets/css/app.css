@@ -31,7 +31,7 @@ input[type="radio"], input[type="checkbox"] {
 	z-index: 10000;
 }
 
-	#header .navbar-brand {
+#header	a.navbar-brand {
 		-moz-transition: opacity 0.2s ease;
 		-webkit-transition: opacity 0.2s ease;
 		-ms-transition: opacity 0.2s ease;
@@ -45,7 +45,7 @@ input[type="radio"], input[type="checkbox"] {
 		top: 0;
 	}
 
-		#header .navbar-brand a {
+		 .navbar-brand a {
 			border: 0;
 			display: block;
 			height: inherit;
@@ -93,12 +93,12 @@ input[type="radio"], input[type="checkbox"] {
 				text-transform: uppercase;
 			}
 
-				#header nav > ul > li > a.menuToggle {
+				#header nav > ul > li > a.navbar-toggle {
 					outline: 0;
 					position: relative;
 				}
 
-					#header nav > ul > li > a.menuToggle:after {
+					#header nav > ul > li > a.navbar-toggle:after {
 						background-image: url("images/bars.svg");
 						background-position: right center;
 						background-repeat: no-repeat;
@@ -111,11 +111,11 @@ input[type="radio"], input[type="checkbox"] {
 
 					@media screen and (max-width: 736px) {
 
-						#header nav > ul > li > a.menuToggle {
+						#header nav > ul > li > a.navbar-toggle {
 							padding: 0 1.5em;
 							}
 
-								#header nav > ul > li > a.menuToggle span {
+								#header nav > ul > li > a.navbar-toggle span {
 									display: none;
 								}
 
