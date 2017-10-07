@@ -4,6 +4,7 @@ html, body, #container {
   width: 100%;
   overflow: hidden;
 }
+
 body {
   padding-top: 50px;
 }
@@ -31,36 +32,7 @@ input[type="radio"], input[type="checkbox"] {
 	z-index: 10000;
 }
 
-#header	a.navbar-brand {
-		-moz-transition: opacity 0.2s ease;
-		-webkit-transition: opacity 0.2s ease;
-		-ms-transition: opacity 0.2s ease;
-		transition: opacity 0.2s ease;
-		height: inherit;
-		left: 1.25em;
-		line-height: inherit;
-		position: absolute;
-		padding: 0 1.5em;
-		line-height: 3em;
-		top: 0;
-	}
-
-		 .navbar-brand a {
-			border: 0;
-			display: block;
-			height: inherit;
-			line-height: inherit;
-		}
-
-			@media screen and (max-width: 736px) {
-
-				#header .navbar-brand a {
-					font-size: 0.8em;
-				}
-
-			}
-
-		#header .navbar-nav ul {
+		#header nav {
 			height: inherit;
 			line-height: inherit;
 			position: absolute;
@@ -68,83 +40,27 @@ input[type="radio"], input[type="checkbox"] {
 			top: 0;
 		}
 
-		#header .nav-link > ul {
-			list-style: none;
-			margin: 0;
-			padding: 0;
-			white-space: nowrap;
-		}
-
-		#header nav-link > ul > li {
-			display: inline-block;
-			padding: 0;
-		}
-
-			#header .nav-link > ul > li > a {
-				border: 0;
-				color: #fff;
-				display: block;
-				font-size: 0.8em;
-				letter-spacing: 0.225em;
-				padding-top: 0px;
-				padding-right: 1.5em;
-				padding-bottom: 0px;
-				padding-left: 1.5em;
-				text-transform: uppercase;
+			#header nav > ul {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				white-space: nowrap;
 			}
 
-				#header nav > ul > li > a.navbar-toggle {
-					outline: 0;
-					position: relative;
+				#header nav > ul > li {
+					display: inline-block;
+					padding: 0;
 				}
 
-					#header nav > ul > li > a.navbar-toggle:after {
-						background-image: url("images/bars.svg");
-						background-position: right center;
-						background-repeat: no-repeat;
-						content: '';
-						display: inline-block;
-						height: 3.75em;
-						vertical-align: top;
-						width: 2em;
+					#header nav > ul > li > a {
+						border: 0;
+						color: #fff;
+						display: block;
+						font-size: 0.8em;
+						letter-spacing: 0.225em;
+						padding: 0 1.5em;
+						text-transform: uppercase;
 					}
-
-					@media screen and (max-width: 736px) {
-
-						#header nav > ul > li > a.navbar-toggle {
-							padding: 0 1.5em;
-							}
-
-								#header nav > ul > li > a.navbar-toggle span {
-									display: none;
-								}
-
-						}
-
-					@media screen and (max-width: 736px) {
-
-						#header nav > ul > li > a {
-							padding: 0 0 0 1.5em;
-						}
-
-					}
-
-				#header nav > ul > li:first-child {
-					margin-left: 0;
-				}
-
-	#header.alt {
-		background: transparent;
-	}
-
-		#header.alt h1 {
-			-moz-pointer-events: none;
-			-webkit-pointer-events: none;
-			-ms-pointer-events: none;
-			pointer-events: none;
-			opacity: 0;
-		}
-
 	
 h1 {
 	Font-Family: 'Roboto Condensed', Sans-Serif;

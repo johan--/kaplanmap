@@ -240,7 +240,7 @@ var documents = L.geoJson(null, {
   },
   onEachFeature: function (feature, layer) {
     if (feature.properties) {
-      var content = "<table class='table table-striped table-bordered table-condensed'>" + "<tr><th>Name</th><td>" + feature.properties.name + "</td></tr>" + "<tr><th>People/Businesses Affliated</th><td>" + feature.properties.merger + "</td></tr>" + "<tr><th>Location</th><td>" + feature.properties.address + "</td></tr>" + "<tr><th>Date</th><td>" + feature.properties.date + "</td></tr>" + "<tr><th>Sub Genre</th><td>" + feature.properties.genre_subl + "</td></tr><table>";
+      var content = "<table class='table table-striped table-bordered table-condensed'>" + "<tr><th>Name</th><td>" + feature.properties.name + "</td></tr>" + "<tr><th>People/Businesses Affliated</th><td>" + feature.properties.merger + "</td></tr>" + "<tr><th>Location</th><td>" + feature.properties.address + "</td></tr>" + "<tr><th>Date</th><td>" + feature.properties.date + "</td></tr>" + "<tr><th>Sub Genre</th><td>" + feature.properties.genre_subl + "</td></tr><table>" + "<br><div class='addthis_inline_share_toolbox'></div>";
       layer.on({
         click: function (e) {
           $("#feature-title").html(feature.properties.name);
@@ -356,7 +356,6 @@ $.getJSON("data/printedworks.geojson", function (data) {
   printedworks.addData(data);
   map.addLayer(printedworksLayer);
 });
-
 
 /*var tradecardsLayer = L.geoJson(null);
 var tradecards = L.geoJson(null, {
