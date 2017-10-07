@@ -436,6 +436,12 @@ map = L.map("map", {
   attributionControl: false,
    fullscreenControl: true
 });
+ $(function(){
+      if(window.location.hash) {
+          var hash = window.location.hash;
+          $(hash).modal('toggle');
+      }
+  });
 
 
 /* Layer control listeners that allow for a single markerClusters layer */
