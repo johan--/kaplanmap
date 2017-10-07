@@ -357,6 +357,7 @@ $.getJSON("data/printedworks.geojson", function (data) {
   map.addLayer(printedworksLayer);
 });
 
+
 /*var tradecardsLayer = L.geoJson(null);
 var tradecards = L.geoJson(null, {
   pointToLayer: function (feature, latlng) {
